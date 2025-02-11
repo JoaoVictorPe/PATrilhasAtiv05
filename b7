@@ -1,0 +1,23 @@
+{
+    public static class Utils
+    {
+    	static void Main()
+    	{
+ 
+     
+        Console.WriteLine("Digite um número para ver sua tabuada:");
+        int numero = int.Parse(Console.ReadLine());
+        int i = 1;
+        Console.WriteLine("Tabuada do " + numero + " : ");
+                          
+        while (i <= 10)
+        {
+            Console.WriteLine( + numero + " x " + i + " = " + numero * i + ".");
+            i++; 
+        }
+        
+    	Console.WriteLine("Presione algo para sair . . . ");
+		Console.ReadKey(true);
+    	}
+	}
+}
