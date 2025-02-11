@@ -1,0 +1,31 @@
+{
+    public static class Utils
+    {
+    	static void Main()
+    	{
+ 
+     
+        Console.Write("Digite um número inteiro positivo: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        if (numero > 0)
+        {
+            int i = 0; 
+            	Console.WriteLine("Os números pares entre 0 e "+ numero + "  são:");
+
+            while (i <= numero)
+            {
+                Console.WriteLine(i);
+                i += 2; // 
+            }
+        }
+        else
+        {
+            Console.WriteLine("Por favor, insira um número inteiro positivo.");
+        }
+        
+    	Console.WriteLine("Presione algo para sair . . . ");
+		Console.ReadKey(true);
+    	}
+	}
+}
