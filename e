@@ -1,34 +1,42 @@
 {
     public static class Utils
     {
-        public static IList<DateTime> GetHolidaysByCurrentYear(int? yearParameter = null)
-        {
-        	Console.WriteLine("Escolha uma opção abaixo: ");
-        	Console.WriteLine("Opção 1");
-        	Console.WriteLine("Opção 2");
-			Console.WriteLine("Opção 3");
-			Console.WriteLine("Digite uma das opções....");
-			Console.WriteLine("-------------------------------------------------------------");
+   
+    	static void Main()
+    	{
+        	Console.WriteLine("Escolha uma opção:");
+			Console.WriteLine("1 - Opçao 1"); 
+			Console.WriteLine("2 - Opçao 2"); 
+			Console.WriteLine("3 - Opçao 3");
+			Console.WriteLine("=========================");
 			
-			int num = Convert.ToInt32(Console.ReadLine());
-				switch (num) { 
-						
+			string opcaoS = Console.ReadLine();
+			int opcao;
+			
+			if (int.TryParse(opcaoS, out opcao )) {
+				switch (opcao) {
 					case 1 :
-						Console.WriteLine("Não gostei da sua lista nem um pouco");
-					break;
-					case 2 :
-						Console.WriteLine("Tenho odio da suas listas");
-					break;
+						Console.WriteLine("Não gostei das suas listas");
+						break;
+					case 2 : 
+						Console.WriteLine("Suas listas são torturantes");
+						break;
 					case 3 :
-						Console.WriteLine("Mo coisa de vacilão esses bglh de lista");
-					break;
-					default:
-					Console.WriteLine("1, 2 ou 3 genio com j");
-     }
+						Console.WriteLine("Listas mo paia as suas pdc?");
+						break;
+					default: 
+						Console.WriteLine("Opçao inválida gênio com j ");
+						break;
+				}					
+			}else {
+				Console.WriteLine("Porfavor insira um número.");
+			
+			}
 			
 			
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
+			}
 		}
 	}
-}
+
