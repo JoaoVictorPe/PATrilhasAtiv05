@@ -1,0 +1,21 @@
+public class Program
+{
+	public static void Main()
+	{
+		int soma = 0;
+        int numero;
+        Console.WriteLine("Insira os números inteiros que deseja somar.");
+        Console.WriteLine("Digite 0 para terminar.");
+        while (true)
+        {
+            Console.Write("Digite um número: ");
+            numero = int.Parse(Console.ReadLine());
+
+           if (numero == 0)
+                break; 
+         soma += numero; 
+        }
+        Console.WriteLine($"A soma dos números inseridos é: {soma}");
+    }
+}
+		
